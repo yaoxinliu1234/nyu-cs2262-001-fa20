@@ -18,3 +18,5 @@ USER nyu
 COPY --chown=nyu:nyu . .
 
 CMD [ "python", "./run.py" ]
+kubectl create deployment sample-time-app---image==docker.io/USERNAME/sample-time-app:latest
+kubectl expose deployment sample-time-app--type="NodePort"--port 8080
