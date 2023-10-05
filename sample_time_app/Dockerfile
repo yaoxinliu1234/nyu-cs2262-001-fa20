@@ -18,3 +18,5 @@ USER nyu
 COPY --chown=nyu:nyu . .
 
 CMD [ "python", "./run.py" ]
+docker build -t yaoxinliu1/sample-time- app:latest
+docker run --name sample-time-app -p 8080:8080 -it sample- time-app
