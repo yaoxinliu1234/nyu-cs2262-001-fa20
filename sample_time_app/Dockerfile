@@ -18,3 +18,8 @@ USER nyu
 COPY --chown=nyu:nyu . .
 
 CMD [ "python", "./run.py" ]
+git clone https://github.com/metacomp/nyu-cs2262-001-fa20.git
+cd nyu-cs2262-001-fa20/sample_time_app
+docker build -t yaoxinliu1/sample-time-app:latest
+docker run --name sample-time-app -p 8080:8080 -it sample- time-app
+
